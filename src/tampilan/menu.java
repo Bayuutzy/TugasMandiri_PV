@@ -38,6 +38,7 @@ public class menu extends javax.swing.JFrame {
         menuKasir = new javax.swing.JMenuItem();
         menuPelanggan = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
 
         jMenuItem2.setText("jMenuItem2");
 
@@ -73,13 +74,21 @@ public class menu extends javax.swing.JFrame {
         });
         jMenu1.add(menuPelanggan);
 
-        jMenuItem1.setText("barang");
+        jMenuItem1.setText("Barang");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
             }
         });
         jMenu1.add(jMenuItem1);
+
+        jMenuItem4.setText("Nota");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem4);
 
         jMenuBar1.add(jMenu1);
 
@@ -98,18 +107,18 @@ public class menu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 321, Short.MAX_VALUE))
+                .addGap(0, 323, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void menuKasirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuKasirActionPerformed
-        // TODO add your handling code here:
-        kasir kasir = new kasir();
-        kasir.setVisible(true);
-        kasir.setLocationRelativeTo(null);
-    }//GEN-LAST:event_menuKasirActionPerformed
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        barang barang = new barang();
+        barang.setVisible(true);
+        barang.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void menuPelangganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPelangganActionPerformed
         // TODO add your handling code here:
@@ -118,11 +127,19 @@ public class menu extends javax.swing.JFrame {
         pelanggan.setLocationRelativeTo(null);
     }//GEN-LAST:event_menuPelangganActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        barang barang = new barang();
-        barang.setVisible(true);
-        barang.setLocationRelativeTo(null);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void menuKasirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuKasirActionPerformed
+        // TODO add your handling code here:
+        kasir kasir = new kasir();
+        kasir.setVisible(true);
+        kasir.setLocationRelativeTo(null);
+    }//GEN-LAST:event_menuKasirActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        Nota nota = new Nota();
+        nota.setVisible(true);
+        nota.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,6 +204,7 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem menuKasir;
     private javax.swing.JMenuItem menuPelanggan;
     // End of variables declaration//GEN-END:variables
